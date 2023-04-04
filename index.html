@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form</title>
+
+        <!--favicon-->
+        <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+        <!--styles-->
+        <link rel="stylesheet" href="./assets/styles/index.css">
+
+        <!--scripts-->
+        <script src="./assets/scripts/index.js" defer></script>
+    </head>
+    <body>
+        
+        <!--logo-->
+        <img class="logo" src="./assets/images/logo.svg" alt="logo" title="logo">
+
+        <!--login section-->
+        <main id="login-section">
+            <form action="#" id="login-form">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2 class="form-title">Faça seu login</h2>
+                        <p class="form-description">Entre com suas informações de cadastro.</p>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+    
+                    <div class="form-group pwd">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                        <img src="./assets/images/eye.svg" id="eye" alt="eye">
+                    </div>
+    
+                    <div class="form-group remember">
+                        <label for="remember">
+                            <input type="checkbox" name="remember" id="remember" value="Remember"> Lembre-me
+                        </label>
+                        <a href="#" class="forget-pwd">Esqueci minha senha</a>
+                    </div>
+    
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="form-submit">Entrar</button>
+                        <p>Não tem conta ainda? <a class="create-account" href="#">Registre-se</a></p>
+                    </div>
+                </div>
+            </form>
+        </main>
+
+        <!--banner section-->
+        <img id="banner-section" src="./assets/images/side-image.jpg" alt="Side img" title="Side img" />
+    </body>
+</html>

@@ -1,0 +1,300 @@
+/*variables*/
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh; 
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--text-base); 
+    display: flex;
+    align-items: center;    
+}
+
+a {
+    text-decoration: none;
+}
+
+/*logo*/
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 115px; 
+    height: auto; 
+}
+
+/*login section*/
+#login-section {
+    width: 50%; 
+    background-color: var(--background);
+    color: inherit; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#login-section #login-form {
+    background-color: var(--form-background); 
+    border-radius: 4px;
+    width: 450px; 
+    height: auto;
+}
+
+.form-container {
+    width: 100%; 
+    max-width: 334px; 
+    margin: 6vh auto; 
+}
+
+.form-container div {
+    width: 100%; 
+}
+
+.form-container .form-header {
+    margin-bottom: 1.6rem; 
+}
+
+.form-container .form-header h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--text-title); 
+    line-height: 2.25; 
+}
+
+.form-container .form-header p {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.form-container .form-group {
+    margin-bottom: 1.25rem;    
+}
+
+.form-group label, 
+.form-group input
+{
+    display: block;
+    width: 100%; 
+}
+
+.form-group label {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.form-group input {
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: inherit;
+    font-weight: 400;    
+    padding-left: 2.7rem; 
+    padding-right: 1rem; 
+    border: 1px solid var(--text-base); 
+    color: var(--text-base);
+    transition: all 0.1s ease;
+}
+
+.form-group input:focus {
+    box-shadow: 0px 0px 0px 2px #FFDE88;
+    border-color: var(--primary-color);
+}
+
+.form-group input::placeholder {
+    color: var(--text-base);
+}
+
+.form-group input#email {
+    background-image: url("../images/mail.svg");
+    background-size: 20px;
+    background-position: 16px 7px ;
+    background-repeat: no-repeat;
+}
+
+.form-group input#email:focus {
+    background-image: url("../images/mail-focus.svg");
+}
+
+
+.form-group input#password {
+    background-image: url("../images/lock.svg");
+    background-size: 20px;
+    background-position: 16px 7px ;
+    background-repeat: no-repeat;
+}
+
+.form-group input#password:focus {
+    background-image: url("../images/lock-focus.svg");
+}
+
+
+.form-group.pwd {
+    position: relative;
+}
+
+.form-group.pwd  #eye {
+    position: absolute;
+    top: 34px;
+    right: 20px;
+    width: 20px;
+    height: 20px; 
+    cursor: pointer;
+}
+
+
+.form-group.remember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-group.remember input, 
+.form-group.remember label {
+    display: inline; 
+    width: unset;
+}
+
+.form-group.remember label {
+    position: relative;
+    font-size: 1rem;
+}
+
+.form-group.remember .forget-pwd {
+    color: var(--primary-color);
+    font-size: 0.875rem;
+}
+
+.form-group.remember input[type='checkbox'] {
+    height: unset; 
+    box-shadow: unset;
+    border-color: unset;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.form-group.remember input[type='checkbox']:hover {
+    box-shadow: unset;
+    border-color: unset;
+}
+
+.form-group.remember input[type='checkbox']::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 20px;
+    height: 20px; 
+    background-color: var(--background);
+    border-radius: 4px;
+    border: 0.5px solid var(--text-base); 
+}
+
+.form-group.remember input[type='checkbox']:checked::before {
+    background-color: var(--primary-color);
+}
+
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid  var(--background);;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 3px;
+    left: 7px;
+}
+
+.form-group #submit {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #473404; 
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bolder;
+    opacity: 1;
+    text-transform: uppercase;
+    transition: all .2s ease;
+    margin-bottom: 0.875rem;
+}
+
+.form-group #submit:hover {
+    opacity: 0.9;
+}
+
+.form-group #submit ~ p {
+    color: var(--primary-color); 
+    font-weight: 400;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.form-group #submit ~ p > a {
+    color: inherit; 
+    font-weight: 600;
+}
+
+
+/*img section*/
+#banner-section {
+    height: 100%;
+    width: 50%; 
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 950px) {
+    #login-section { 
+        width: 100%; 
+    }
+
+    #banner-section {
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #login-form {
+        max-width: 90%;
+        padding: 0 7%; 
+    }
+
+    #login-container {
+        margin: 2rem 0; 
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 350px) { 
+    .form-group.remember {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
