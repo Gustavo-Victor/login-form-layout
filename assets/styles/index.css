@@ -32,8 +32,8 @@ a {
 /*logo*/
 .logo {
     position: absolute;
-    top: 20px;
-    left: 30px;
+    top: 2%;
+    left: 3%;
     width: 115px; 
     height: auto; 
 }
@@ -284,19 +284,23 @@ input[type=checkbox]:checked:after {
 @media screen and (max-width: 480px) {
     #login-form {
         max-width: 90%;
-        padding: 0 7%; 
+        padding: 0 6%; 
     }
 
-    #login-container {
-        margin: 2rem 0; 
+    #form-container {
+        margin: 2vh 0; 
         width: 100%;
     }
 
 }
 
 @media screen and (max-width: 350px) { 
-    .form-container { 
-        margin: 5vh auto;
+    #login-section #login-form { 
+        background-color: unset;
+    }
+
+    .form-container {
+        margin: 2% auto; 
     }
 
     .form-group.remember {
