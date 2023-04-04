@@ -16,7 +16,7 @@
 
 Este projeto é um página web simples feita em HTML, CSS e JavaScript com design customizado de formulário de login. O projeto é mais um desafio do curso Discover da Rocketseat. Link para [página do desafio](https://efficient-sloth-d85.notion.site/Desafio-Login-Form-CSS-a10caea5a183494e97eb9ce4f33536b3). 
 
-Clique [aqui]() para conferir como ficou o projeto no Github pages
+Clique [aqui](https://gustavo-victor.github.io/login-form-layout/) para conferir como ficou o projeto no Github pages
 
 
 ## 📷 Layout
